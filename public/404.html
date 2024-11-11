@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/" />
+  </head>
+  <body>
+    <script>
+      // Redirect all 404 requests to index.html, preserving the path for React Router.
+      window.location.replace(
+        window.location.origin + "/" + window.location.pathname.substring(1),
+      );
+    </script>
+  </body>
+</html>
