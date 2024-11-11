@@ -80,16 +80,13 @@
   color: #9ca3af;
 }
 
-/* Responsive Design for Small Screens */
 @media (max-width: 768px) {
   .features-container {
     padding: 1rem;
   }
-
   .features-hero {
     padding: 2rem;
   }
-
   .features-list {
     grid-template-columns: 1fr;
   }
