@@ -1,0 +1,51 @@
+.sidebar {
+  background: linear-gradient(135deg, #1b1b1d, #2c2c2f);
+  color: #f5f5f5;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.4);
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-radius: 0 16px 16px 0;
+}
+
+.sidebar h2 {
+  font-size: 1.8rem;
+  color: #e94f37; /* Accent color for the logo/title */
+  margin-bottom: 2rem;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar nav a {
+  color: #9ca3af; /* Soft gray for the links */
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition:
+    color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.sidebar nav a:hover {
+  color: #f5f5f5; /* Light color on hover */
+  transform: translateX(8px); /* Subtle slide effect */
+}
+
+.sidebar nav a:active {
+  color: #e94f37; /* Accent color when active */
+}
+
+.sidebar nav a.active-link {
+  color: #e94f37; /* Accent color for the current page */
+  font-weight: bold;
+}
