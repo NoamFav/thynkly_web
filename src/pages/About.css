@@ -110,15 +110,16 @@
   line-height: 1.6;
 }
 
-/* Responsive Layout for Mission and Vision */
-@media (min-width: 768px) {
-  .about-content {
-    flex-direction: row;
-    gap: 2rem;
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
   }
-
+  .about-hero,
   .mission,
   .vision {
-    width: 48%;
+    padding: 1.5rem;
+  }
+  .about-content {
+    flex-direction: column;
   }
 }

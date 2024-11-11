@@ -88,3 +88,21 @@ button:focus-visible {
     border-color: #e94f37;
   }
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  button {
+    padding: 0.5em 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  body {
+    flex-direction: column;
+  }
+}

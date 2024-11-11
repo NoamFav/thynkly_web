@@ -121,3 +121,18 @@
   transform: translateY(-2px);
   box-shadow: 0px 6px 20px rgba(233, 79, 55, 0.6);
 }
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 1rem;
+  }
+  .contact-hero,
+  .contact-info,
+  .contact-form-section {
+    padding: 1.5rem;
+  }
+  .contact-details {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

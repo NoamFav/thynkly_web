@@ -157,3 +157,21 @@ cite {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 1rem;
+  }
+  .hero,
+  .key-features,
+  .how-it-works,
+  .testimonials,
+  .get-started {
+    padding: 1.5rem;
+  }
+  .features-list-home,
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+}
