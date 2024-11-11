@@ -4,6 +4,7 @@ import {
   FaBook,
   FaStepForward,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 function Home() {
@@ -13,9 +14,11 @@ function Home() {
       <section className="hero">
         <h1>Welcome to THYNKLY</h1>
         <p>
-          Empowering Knowledge Management with Notes, Mind Maps, and Flashcards
+          Empowering Knowledge Management with Notes, Mind Maps, and Flashcards.{" "}
+          <br />
+          Application in development, keep an eye out for updates!
         </p>
-        <button className="cta-button">Get Started</button>
+        <button className="cta-button">Coming soon</button>
       </section>
 
       {/* Key Features Preview */}
@@ -80,8 +83,8 @@ function Home() {
         <h2>What Our Users Say</h2>
         <blockquote>
           <p>
-            "THYNKLY has transformed how I manage my knowledge. It's a must-have
-            for anyone serious about learning!"
+            &quot;THYNKLY has transformed how I manage my knowledge. It&apos;s a
+            must-have for anyone serious about learning!&quot;
           </p>
           <cite>- Alex T.</cite>
         </blockquote>
@@ -90,7 +93,9 @@ function Home() {
       {/* Final Call-to-Action */}
       <section className="get-started">
         <h2>Ready to Take Your Knowledge to the Next Level?</h2>
-        <button className="cta-button">Explore Features</button>
+        <Link to="/features" className="cta-button">
+          Explore Features
+        </Link>
       </section>
     </div>
   );
