@@ -118,8 +118,19 @@
   .mission,
   .vision {
     padding: 1.5rem;
+    text-align: center;
   }
   .about-content {
     flex-direction: column;
+  }
+  .mission,
+  .vision {
+    align-items: center; /* Center the entire section */
+    text-align: center; /* Center text within */
+  }
+
+  .mission-header,
+  .vision-header {
+    justify-content: center; /* Center the title with icon */
   }
 }

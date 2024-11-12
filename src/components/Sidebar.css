@@ -1,4 +1,4 @@
-/* Sidebar Styles */
+/* Sidebar default styles for larger screens */
 .sidebar {
   background: linear-gradient(135deg, #1b1b1d, #2c2c2f);
   color: #f5f5f5;
@@ -14,15 +14,16 @@
   left: 0;
   top: 0;
   border-radius: 0 16px 16px 0;
-  transition: transform 0.3s ease; /* Transition for sliding effect */
 }
 
+/* Sidebar heading style */
 .sidebar h2 {
   font-size: 1.8rem;
   color: #e94f37; /* Accent color for the logo/title */
   margin-bottom: 2rem;
 }
 
+/* Sidebar navigation links */
 .sidebar nav {
   display: flex;
   flex-direction: column;
@@ -52,16 +53,21 @@
   font-weight: bold;
 }
 
-/* Toggle Button for Mobile */
+/* Toggle Button for mobile - hidden on larger screens */
 .sidebar-toggle {
-  display: none; /* Hidden by default */
+  display: none;
 }
 
-/* Responsive Sidebar for Mobile Screens */
+/* Responsive Sidebar Overlay for Mobile Screens */
 @media (max-width: 768px) {
-  /* Sidebar is hidden by default on mobile */
+  /* Hide sidebar by default on small screens */
   .sidebar {
+    position: fixed;
+    width: 250px;
     transform: translateX(-100%); /* Slide out of view */
+    z-index: 10;
+    border-radius: 0; /* Remove border radius on smaller screens */
+    transition: transform 0.3s ease; /* Smooth sliding transition */
   }
 
   /* Show sidebar when open */
@@ -87,7 +93,7 @@
     transition: transform 0.3s ease;
   }
 
-  /* Overlay for the sidebar */
+  /* Overlay for closing the sidebar on outside click */
   .sidebar-overlay {
     position: fixed;
     top: 0;
@@ -99,7 +105,7 @@
     display: none; /* Hidden by default */
   }
 
-  /* Show the overlay when sidebar is open */
+  /* Show overlay when sidebar is open */
   .sidebar.open ~ .sidebar-overlay {
     display: block;
   }
