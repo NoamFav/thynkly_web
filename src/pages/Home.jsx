@@ -83,10 +83,19 @@ function Home() {
         <h2>What Our Users Say</h2>
         <blockquote>
           <p>
-            &quot;THYNKLY has transformed how I manage my knowledge. It&apos;s a
-            must-have for anyone serious about learning!&quot;
+            &quot;THYNKLY has transformed how I manage my knowledge. The
+            intuitive tools make learning and organizing ideas incredibly
+            efficient!&quot;
           </p>
           <cite>- Alex T.</cite>
+        </blockquote>
+        <blockquote>
+          <p>
+            &quot;With THYNKLY’s mind mapping and flashcards, I&apos;ve mastered
+            complex topics faster than ever. A game-changer for serious
+            learners!&quot;
+          </p>
+          <cite>- Jamie L.</cite>
         </blockquote>
       </section>
 
